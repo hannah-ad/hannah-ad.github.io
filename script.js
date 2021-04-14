@@ -1,8 +1,8 @@
 function math(){
- var response = prompt("1+1=?");
- if (response < 2){
+ var response = prompt("100+100=?");
+ if (response < 200){
  alert("Try again!");
-}else if (response > 2){
+}else if (response > 200){
 alert("Try again!");
 }else{
 alert("Bingo!");
@@ -11,10 +11,10 @@ alert("Bingo!");
 math();
 
 function math2(){
- var response = prompt("10*10=?");
- if (response < 100){
+ var response = prompt("100*100=?");
+ if (response < 10000){
  alert("Try again!");
-}else if (response > 100){
+}else if (response > 10000){
 alert("Try again!");
 }else{
 alert("Bingo!");
