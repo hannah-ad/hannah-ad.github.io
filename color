@@ -1,0 +1,17 @@
+PImage img;
+void setup() {
+  size(800, 400);
+  img=loadImage("colorful.jpg");
+}
+void draw() {
+  background(255);
+  for(int i=0;i<width;i+=50){   //每隔50个像素取色画圆
+    for(int j=0;j<height;j+=50){ 
+  color c= img.get(i,j);
+  fill(c);
+  stroke(c);
+  ellipseMode(CORNER);
+  ellipse(i,j, 50, 50);
+    }
+  }
+}
